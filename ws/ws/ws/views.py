@@ -63,7 +63,7 @@ def register():
             mongoDB.users.insert_one({
                 "email": form.email.data,
                 "password": generate_password_hash(form.password1.data),
-                "isAdmin:": 0,
+                "isAdmin:": False,
                 "status": 0
             })
             flash("User successfully registered!", category='success')
@@ -149,3 +149,19 @@ def csv_download():
        output.headers["Content-type"] = "text/csv"
        return output
    return redirect(url_for('csv_view'))
+
+@app.route('/adopter_list')
+def adopter_list():
+   output = []
+   documents = mongoDB.adopters.find()
+   for document in documents:
+       output.append({
+           "name": document["name"]
+       })
+   count = len(output)
+   return jsonify({
+       "draw": 1,
+       "recordsTotal": count,
+       "recordsFiltered": count,
+       "data": output
+   })

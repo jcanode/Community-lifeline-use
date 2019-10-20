@@ -23,4 +23,6 @@ class User(UserMixin, db.Document):
     def load(self, user_data):
         self.email = user_data["email"]
         self.password = user_data["password"]
+        self.isAdmin = user_data["isAdmin"]
+        self.status = user_data["status"]
         return self
