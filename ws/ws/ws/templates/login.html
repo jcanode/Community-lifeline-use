@@ -1,0 +1,56 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+<h3>{{ message }}</h3>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!--<div class="col-md-4"></div>-->
+            <div class="col-md-4 col-md-offset-4">
+                <form action="" method="post">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h1>Login</h1>
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                {{form.email(class_="form-control")}}
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                {{form.password(class_="form-control")}}
+                                {{form.hidden_tag()}}
+                            </div>
+                            {% for field in form.errors %}
+                            {% for error in form.errors[field] %}
+                            <div class="alert alert-error">
+                                <strong>Error!</strong> {{error}}
+                            </div>
+                            {%endfor%}
+                            {%endfor%}
+                            {% with errors = get_flashed_messages(category_filter=["error"]) %}
+                            {% if errors %}
+                            {% for msg in errors %}
+                            <div class="alert alert-error">
+                                <strong>Error!</strong> {{msg}}
+                            </div>
+                            {% endfor %}
+                            {% endif %}
+                            {% endwith %}
+                        </div>
+                        <div class="panel-footer">
+                            <a class="btn btn-secondary" href="{{ url_for('register') }}">Register</a>
+                            <input class="btn btn-primary" type="submit" value="Login" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--<div class="col-md-4"></div>-->
+        </div>
+    </div>
+</body>
+
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}</h2>
+
+<a class="btn btn-primary" href="{{url_for('csv_download', table='users')}}">Download User CSV</a>
+<a class="btn btn-primary" href="{{url_for('csv_download', table='adopters')}}">Download Candidate CSV</a>
+{% endblock %}
