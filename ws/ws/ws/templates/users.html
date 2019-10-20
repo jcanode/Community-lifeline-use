@@ -1,0 +1,41 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}</h2>
+<h3>{{ message }}</h3>
+
+<table id="userTable" class="table table-hover" style="width:100%">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Admin Status</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+{% endblock %}
+
+
+
+{% block scripts %}
+<script>
+    $(document).ready(function () {
+        $('#userTable').DataTable({
+            serverSide: true,
+            ajax: {
+                url: '/user_list',
+                type: 'GET',
+            },
+            bSort: false,
+            columns: [
+                { data: "name" },
+                { data: "email" },
+                { data: "status" },
+                { data: "isAdmin" } ]
+        });
+    });
+</script>
+{% endblock %}
