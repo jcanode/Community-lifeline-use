@@ -71,9 +71,10 @@ def register():
         # Enter user only if there are no errors
         if not anyErr:
             mongoDB.users.insert_one({
+                "name": form.name.data,
                 "email": form.email.data,
                 "password": generate_password_hash(form.password1.data),
-                "isAdmin:": False,
+                "isAdmin": False,
                 "status": 0
             })
             flash("User successfully registered!", category='success')

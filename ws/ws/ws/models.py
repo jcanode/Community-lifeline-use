@@ -3,6 +3,7 @@ from ws import db
  
 class User(UserMixin, db.Document):
     # User authentication information
+    name = db.StringField()
     email = db.StringField()
     password = db.StringField()
     isAdmin = db.BooleanField()
@@ -21,6 +22,7 @@ class User(UserMixin, db.Document):
         return False
 
     def load(self, user_data):
+        self.name = user_data["name"]
         self.email = user_data["email"]
         self.password = user_data["password"]
         self.isAdmin = user_data["isAdmin"]
