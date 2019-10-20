@@ -5,13 +5,14 @@ Routes and views for the flask application.
 from datetime import datetime
 from flask import Flask, render_template, redirect, url_for, request, jsonify
 from ws import app, models, mongoDB, db, login_manager, auth
-from .forms import LoginForm, RegisterForm
+from .forms import LoginForm, RegisterForm, CSVUploadForm
 from flask import request, redirect, render_template, url_for, flash, make_response
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import login_user, logout_user, login_required, current_user
 import csv
 from io import StringIO
 from datetime import timedelta
+import pandas as pd
 
 @app.route('/home')
 @login_required
@@ -28,11 +29,13 @@ def home():
 @login_required
 def csv_view():
     #Renders the csv page.
+    form=CSVUploadForm()
     return render_template(
         'csv.html',
         title='CSV',
         year=datetime.now().year,
-        message='Your csv page.'
+        message='Your csv page.',
+        form=form
     )
 
 @app.route('/candidates')
@@ -151,6 +154,7 @@ def csv_prepare_row(obj_data, col_names):
            col_names.append(key)
        result.insert(col_names.index(key), value)
    return result
+
 @app.route('/csv_download')
 def csv_download():
    table = request.args.get('table')
@@ -196,3 +200,27 @@ def col_result(document, key):
     if key in document:
         return document[key]
     return ""
+
+@app.route('/csv_upload', methods=["POST"])
+def csv_upload():
+   form = CSVUploadForm()
+   if form.validate_on_submit():
+       headers = form.headers.data
+       if len(headers) > 0:
+           headers = headers.split(',')
+       data = pd.read_csv( form.file.data )
+       if len(headers) <= 0:
+           headers = data.columns.values
+       for i in range(0, data["_id"].count()):
+           row={}
+           for field in headers:
+               row[field]=str(data.iloc[i][field])
+           mongoDB[form.table.data].insert(row)
+       flash("Successfully uploaded CSV", category='success')
+   return render_template(
+       'csv.html',
+       title='CSV',
+       year=datetime.now().year,
+       message='Your csv page.',
+       form=form
+   )

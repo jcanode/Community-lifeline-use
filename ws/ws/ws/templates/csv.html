@@ -4,8 +4,71 @@
 
 <h2>{{ title }}</h2>
 
-<a class="btn btn-primary" href="{{url_for('csv_download', table='users')}}">Download User CSV</a>
-<a class="btn btn-primary" href="{{url_for('csv_download', table='adopters')}}">Download Candidate CSV</a>
-{% endblock %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h1>Export</h1>
+                </div>
+                <div class="panel-body">
+                    <a class="btn btn-primary" href="{{url_for('csv_download', table='users')}}">Download User CSV</a>
+                    <a class="btn btn-primary" href="{{url_for('csv_download', table='adopters')}}">Download Candidate CSV</a>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <form action="{{ url_for('csv_upload') }}" enctype="multipart/form-data" method="post">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h1>Import</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label for="file">CSV File</label>
+                            {{ form.file }}
+                        </div>
+                        <div class="form-group">
+                            <label for="table">Collection</label>
+                            {{ form.table(class_='list-unstyled') }}
+                        </div>
+                        <div class="form-group">
+                            <label for="headers">Headers</label>
+                            {{ form.headers(class='form-control',placeholder='Leave empty to use first row.') }}
+                        </div>
+                        {{form.hidden_tag()}}
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        {% with errors = get_flashed_messages(category_filter=["error"]) %}
+                        {% if errors %}
+                        {% for msg in errors %}
+                        <div class="alert alert-error">
+                            <strong>Error!</strong> {{msg}}
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                        {% endwith %}
+                    </div>
+                    <div class="panel-footer"></div>
+                </div>
+                {% with errors = get_flashed_messages(category_filter=["success"]) %}
+                {% if errors %}
+                {% for msg in errors %}
+                <div class="alert alert-error">
+                    <strong>Success!</strong> {{msg}}
+                </div>
 
-{% block scripts %}{% endblock %}
+                {% endfor %}
+                {% endif %}
+                {% endwith %}
+
+            </form>
+        </div>
+    </div>
+</div>
+
+    {% endblock %}
+
+    {% block scripts %}{% endblock %}
