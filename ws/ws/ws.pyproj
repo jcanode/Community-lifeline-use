@@ -32,6 +32,7 @@
     <Compile Include="ws\auth.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ws\flag_twitter.py" />
     <Compile Include="ws\models.py">
       <SubType>Code</SubType>
     </Compile>
@@ -79,8 +80,8 @@
     <Content Include="ws\templates\index2.html" />
     <Content Include="ws\templates\jwt_controls.html" />
     <Content Include="ws\templates\layout.html" />
-    <Content Include="ws\templates\NewFile1.txt" />
     <Content Include="ws\templates\login.html" />
+    <Content Include="ws\templates\social_media_flags.html" />
     <Content Include="ws\templates\users.html" />
     <Content Include="ws\templates\site_setting.html" />
     <Content Include="ws\templates\register.html" />

@@ -186,7 +186,8 @@ def adopter_list():
            "email": col_result(document, "email"),
            "address": col_result(document, "address"),
            "compatability score": col_result(document, "compatability score"),
-           "full profile": col_result(document, "full profile")
+           "full profile": col_result(document, "full profile"),
+           "id": str(document["_id"])
        })
    count = len(output)
    return jsonify({
@@ -223,4 +224,14 @@ def csv_upload():
        year=datetime.now().year,
        message='Your csv page.',
        form=form
+   )
+
+@app.route('/social_media_flags')
+def social_media_flags():
+    id = request.args.get("id") 
+    return render_template(
+       'social_media_flags.html',
+       title='Social Media Flags',
+       year=datetime.now().year,
+       userID = id
    )

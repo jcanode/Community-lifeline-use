@@ -1,0 +1,49 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}</h2>
+
+<input id="userID" type="hidden" value="{{userID}}" />
+<table id="postTable" class="table table-hover" style="width:100%">
+    <thead>
+        <tr>
+            <th>Social Media</th>
+            <th>Account</th>
+            <th>Text</th>
+            <th>Flag Triggered</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+{% endblock %}
+
+
+
+{% block scripts %}
+<script>
+    $(document).ready(function () {
+        $('#postTable').DataTable({
+            serverSide: true,
+            ajax: {
+                url: '/flag_tweets',
+                type: 'GET',
+                data: function () {
+                    return {
+                        "id": $("#userID").val()
+                    };
+                }
+            },
+            bSort: false,
+            columns: [
+                { data: "social_media" },
+                { data: "tweet.user.screen_name" },
+                { data: "tweet.text" },
+                { data: "flags", render: function (data, type, row) {
+                    return data.join(",")
+                }}
+            ]
+        });
+    });
+</script>
+{% endblock %}
