@@ -3,7 +3,7 @@ Routes and views for the flask application.
 """
 
 from datetime import datetime
-from flask import Flask, render_template, redirect, url_for, request
+from flask import Flask, render_template, redirect, url_for, request, jsonify
 from ws import app, models, mongoDB, db, login_manager, auth
 from .forms import LoginForm, RegisterForm
 from flask import request, redirect, render_template, url_for, flash, make_response
@@ -44,6 +44,16 @@ def candidates():
         title='Candidates',
         year=datetime.now().year,
         message='Import list of candidates here'
+    )
+
+@app.route('/users')
+@login_required
+def users():
+    #Renders the users page.
+    return render_template(
+        'users.html',
+        title='Users',
+        year=datetime.now().year
     )
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -105,13 +115,22 @@ def site_setting():
 @app.route('/user_list')
 @login_required
 def user_list():
-    #Renders the user list page.
-    return render_template(
-        'user_list.html',
-        title='User List',
-        year=datetime.now().year,
-        message='Your user list page.'
-    )
+   output = []
+   documents = mongoDB.users.find()
+   for document in documents:
+       output.append({
+           "name": col_result(document, "name"),
+           "email": col_result(document, "email"),
+           "status": col_result(document, "status"),
+           "isAdmin": col_result(document, "isAdmin")
+       })
+   count = len(output)
+   return jsonify({
+       "draw": 1,
+       "recordsTotal": count,
+       "recordsFiltered": count,
+       "data": output
+       })
 
 @app.route('/jwt_controls')
 def jwt_controls():
@@ -156,7 +175,13 @@ def adopter_list():
    documents = mongoDB.adopters.find()
    for document in documents:
        output.append({
-           "name": document["name"]
+           "name": col_result(document, "name"),
+           "age": col_result(document, "age"),
+           "phone": col_result(document, "phone"),
+           "email": col_result(document, "email"),
+           "address": col_result(document, "address"),
+           "compatability score": col_result(document, "compatability score"),
+           "full profile": col_result(document, "full profile")
        })
    count = len(output)
    return jsonify({
@@ -165,3 +190,8 @@ def adopter_list():
        "recordsFiltered": count,
        "data": output
    })
+
+def col_result(document, key):
+    if key in document:
+        return document[key]
+    return ""

@@ -81,7 +81,7 @@
     <Content Include="ws\templates\layout.html" />
     <Content Include="ws\templates\NewFile1.txt" />
     <Content Include="ws\templates\login.html" />
-    <Content Include="ws\templates\user_list.html" />
+    <Content Include="ws\templates\users.html" />
     <Content Include="ws\templates\site_setting.html" />
     <Content Include="ws\templates\register.html" />
   </ItemGroup>
