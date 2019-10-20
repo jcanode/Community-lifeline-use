@@ -6,6 +6,7 @@ from bson.objectid import ObjectId
 import string
 from ws import mongoDB, app
 from flask import Flask, render_template, redirect, url_for, request, jsonify
+from flask_login import login_required
 
 api = twitter.Api(consumer_key="ZhsPtnsPyqjDxhoY5M4cqdeGQ",
                   consumer_secret="DoRV7nMrh1YgdedBXDREauf5RgL99B2A9HylMY7c5Jze0gHBJ2",
@@ -13,6 +14,7 @@ api = twitter.Api(consumer_key="ZhsPtnsPyqjDxhoY5M4cqdeGQ",
                   access_token_secret="cWwMSisSCH5zosSsw9WHRSkcxaEwRpI6W73LtOptpwqd9")
 
 @app.route("/flag_tweets")
+@login_required
 def flag_tweets():
     id = request.args.get("id") 
 

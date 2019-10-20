@@ -137,6 +137,7 @@ def user_list():
        })
 
 @app.route('/jwt_controls')
+@login_required
 def jwt_controls():
     #Renders the jwt controls page.
     return render_template(
@@ -156,6 +157,7 @@ def csv_prepare_row(obj_data, col_names):
    return result
 
 @app.route('/csv_download')
+@login_required
 def csv_download():
    table = request.args.get('table')
    if table != None:
@@ -175,6 +177,7 @@ def csv_download():
    return redirect(url_for('csv_view'))
 
 @app.route('/adopter_list')
+@login_required
 def adopter_list():
    output = []
    documents = mongoDB.adopters.find()
@@ -185,7 +188,7 @@ def adopter_list():
            "phone": col_result(document, "phone"),
            "email": col_result(document, "email"),
            "address": col_result(document, "address"),
-           "compatability score": col_result(document, "compatability score"),
+           "score": col_result(document, "score"),
            "full profile": col_result(document, "full profile"),
            "id": str(document["_id"])
        })
@@ -202,7 +205,13 @@ def col_result(document, key):
         return document[key]
     return ""
 
+def col_result2(document, key1, key2):
+    if key1 in document and key2 in document[key1]:
+        return document[key1][key2]
+    return ""
+
 @app.route('/csv_upload', methods=["POST"])
+@login_required
 def csv_upload():
    form = CSVUploadForm()
    if form.validate_on_submit():
@@ -227,6 +236,7 @@ def csv_upload():
    )
 
 @app.route('/social_media_flags')
+@login_required
 def social_media_flags():
     id = request.args.get("id") 
     return render_template(
