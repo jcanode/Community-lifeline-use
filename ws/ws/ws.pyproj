@@ -29,6 +29,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="runserver.py" />
+    <Compile Include="ws\models.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ws\__init__.py" />
     <Compile Include="ws\views.py" />
   </ItemGroup>
@@ -68,7 +71,8 @@
     <Content Include="ws\templates\contact.html" />
     <Content Include="ws\templates\index.html" />
     <Content Include="ws\templates\layout.html" />
-    <Content Include="ws\templates\NewFile1.txt" />
+    <Content Include="ws\templates\Login.html" />
+    <Content Include="ws\templates\Register.html" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="ws-env\">

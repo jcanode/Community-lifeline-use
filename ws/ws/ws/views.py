@@ -5,6 +5,11 @@ Routes and views for the flask application.
 from datetime import datetime
 from flask import render_template
 from ws import app
+from ws import models
+from .forms import LoginForm, RegisterForm
+from flask import request, redirect, render_template, url_for, flash
+from werkzeug.security import generate_password_hash, check_password_hash
+from ws import db
 
 @app.route('/')
 @app.route('/home')
@@ -35,3 +40,49 @@ def about():
         year=datetime.now().year,
         message='Your application description page.'
     )
+
+@login_manager.user_loader
+def getUserById(id):
+    return User.get(id)
+
+def getUserByEmail(email):
+    return db.users.find_one({"email": email})
+
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    form = RegisterForm()
+    if request.method == 'POST' and form.validate_on_submit():
+        anyErr = False
+
+        # Validate no user exists with email
+        user = getUserByEmail(form.email.data)
+        if user != None:
+            flash("Email already exists in database.", category='error')
+
+        # Enter user only if there are no errors
+        if not anyErr:
+            db.users.insert_one({
+                "email": form.email.data,
+                "password": generate_password_hash(form.password1.data)
+            })
+            flash("User successfully registered!", category='success')
+            return redirect(request.args.get("returnurl") or url_for("login"))
+    return render_template('register.html', title='register', form=form)
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    form = LoginForm()
+    if request.method == 'POST' and form.validate_on_submit():
+        user = getUserByEmail(form.email.data)
+        # Verify user found and check password
+        if user != None and check_password_hash(user["password"], form.password.data):
+            login_user(user)
+            flash("Logged in successfully", category='success')
+            return redirect(request.args.get("returnurl") or url_for("home"))
+        flash("Wrong email or password", category='error')
+    return render_template('login.html', title='login', form=form)
+
+@app.route('/logout')
+def logout():
+    logout_user()
+    return redirect(url_for('login'))
