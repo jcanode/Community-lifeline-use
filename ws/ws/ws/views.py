@@ -4,12 +4,11 @@ Routes and views for the flask application.
 
 from datetime import datetime
 from flask import render_template
-from ws import app
-from ws import models
+from ws import app, models, mongoDB, db, login_manager
 from .forms import LoginForm, RegisterForm
 from flask import request, redirect, render_template, url_for, flash
 from werkzeug.security import generate_password_hash, check_password_hash
-from ws import db
+from flask_login import login_user
 
 @app.route('/')
 @app.route('/home')
@@ -43,10 +42,12 @@ def about():
 
 @login_manager.user_loader
 def getUserById(id):
+    user = mongoDB.users.find_one({"_id": id})
+    json.loads(data, object_hook=lambda d: namedtuple('User', d.keys())(*d.values()))
     return User.get(id)
 
 def getUserByEmail(email):
-    return db.users.find_one({"email": email})
+    return mongoDB.users.find_one({"email": email})
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
@@ -61,9 +62,10 @@ def register():
 
         # Enter user only if there are no errors
         if not anyErr:
-            db.users.insert_one({
+            mongoDB.users.insert_one({
                 "email": form.email.data,
-                "password": generate_password_hash(form.password1.data)
+                "password": generate_password_hash(form.password1.data),
+                "status": 0
             })
             flash("User successfully registered!", category='success')
             return redirect(request.args.get("returnurl") or url_for("login"))
