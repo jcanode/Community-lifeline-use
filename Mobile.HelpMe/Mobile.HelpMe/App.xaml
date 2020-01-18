@@ -23,10 +23,9 @@
             <Setter Property="TextColor" Value="White"/>
         </Style>
         <Style x:Key="ButtonStyle" TargetType="Button">
-            <Setter Property="BackgroundColor" Value="#D19CFF"/>
+            <Setter Property="BackgroundColor" Value="#562880"/>
             <Setter Property="FontSize" Value="24"/>
             <Setter Property="TextColor" Value="White"/>
-            <Setter Property="CornerRadius" Value="5"/>
         </Style>
     </Application.Resources>
 </Application>

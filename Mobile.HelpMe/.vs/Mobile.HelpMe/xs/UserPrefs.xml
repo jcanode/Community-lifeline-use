@@ -1,14 +1,14 @@
 ﻿<Properties StartupConfiguration="{86609E0D-0CCB-4308-A367-98387F119346}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Mobile.HelpMe/Pages/MainPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Mobile.HelpMe/PageModels/MainPageModel.cs">
     <Files>
       <File FileName="Mobile.HelpMe/PageModels/HelpMePageModel.cs" Line="128" Column="2" />
       <File FileName="Mobile.HelpMe/Pages/HelpMePage.xaml" Line="52" Column="66" />
       <File FileName="Mobile.HelpMe/PageModels/BaseViewModel.cs" Line="26" Column="1" />
       <File FileName="Mobile.HelpMe/AppConstants.cs" Line="36" Column="47" />
       <File FileName="Mobile.HelpMe/Models/HelpRequest.cs" Line="18" Column="1" />
-      <File FileName="Mobile.HelpMe/Pages/MainPage.xaml" Line="7" Column="53" />
-      <File FileName="Mobile.HelpMe/App.xaml" Line="26" Column="56" />
-      <File FileName="Mobile.HelpMe/Pages/MainPage.xaml.cs" Line="20" Column="6" />
+      <File FileName="Mobile.HelpMe/Pages/MainPage.xaml" Line="13" Column="53" />
+      <File FileName="Mobile.HelpMe/App.xaml" Line="28" Column="57" />
+      <File FileName="Mobile.HelpMe/PageModels/MainPageModel.cs" Line="9" Column="16" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,12 +16,12 @@
           <Node name="Mobile.HelpMe" expanded="True">
             <Node name="Mobile.HelpMe" expanded="True">
               <Node name="Models" expanded="True" />
-              <Node name="PageModels" expanded="True" />
+              <Node name="PageModels" expanded="True">
+                <Node name="MainPageModel.cs" selected="True" />
+              </Node>
               <Node name="Pages" expanded="True">
                 <Node name="HelpYouPage.xaml" expanded="True" />
-                <Node name="MainPage.xaml" expanded="True">
-                  <Node name="MainPage.xaml.cs" selected="True" />
-                </Node>
+                <Node name="MainPage.xaml" expanded="True" />
               </Node>
               <Node name="App.xaml" expanded="True" />
             </Node>
