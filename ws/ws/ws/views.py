@@ -186,7 +186,10 @@ def getUsers():
        output.append({
            "name": col_result(document, "name"),
            "email": col_result(document, "email"),
-           "helprating": col_result(document, "score"),
+           "problem": col_result(document, "problem"),
+           "latitude": col_result(document, "latitude"),
+           "longitude": col_result(document, "longitude"),
+            "description": col_result(document, "description"),
            "id": str(document["_id"])
        })
    count = len(output)

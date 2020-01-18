@@ -9,14 +9,16 @@ blackList = False
 age = 5
 """
 
-@app.route("/adopterData")
+@app.route("/HelpRequest")
 def adopterData(): 
     mongoDB.adopters.insert_one({
 
+        "latitude": 33.509949,
+        "longitude":  -112.127377,
         "name": "justin",
-        "pass": "void",
         "email": "jcanode@my.gcu.edu",
-        "score": 0,
+        "problem": 1,
+        "description": "test"
     })
     return render_template(
         'index.html',
