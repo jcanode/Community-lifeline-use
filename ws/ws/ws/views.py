@@ -4,15 +4,23 @@ Routes and views for the flask application.
 
 from datetime import datetime
 from flask import Flask, render_template, redirect, url_for, request, jsonify
+# from flask_restful import Resource, Api
 from ws import app, models, mongoDB, db, login_manager, auth
 from .forms import LoginForm, RegisterForm, CSVUploadForm
+from flask_wtf.csrf import CSRFProtect
 from flask import request, redirect, render_template, url_for, flash, make_response
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import login_user, logout_user, login_required, current_user
 import csv
+import json
 from io import StringIO
 from datetime import timedelta
 import pandas as pd
+
+csrf = CSRFProtect(app)
+
+# csrf_protect = CsrfProtect(app)
+# api = restful.Api(app, decorators=[csrf.exempt])
 
 @app.route('/home')
 @login_required
@@ -210,7 +218,7 @@ def col_result2(document, key1, key2):
         return document[key1][key2]
     return ""
 
-@app.route('/csv_upload', methods=["POST"])
+@app.route('/csv_upload', methods=["POST"]) 
 @login_required
 def csv_upload():
    form = CSVUploadForm()
@@ -234,6 +242,32 @@ def csv_upload():
        message='Your csv page.',
        form=form
    )
+
+
+
+@app.route('/api/requestHelp/', methods=['POST'])
+@csrf.exempt
+# @csrf.exempt
+def requestHelp():
+        data = request.get_json()
+        temp = json.dumps(data)
+        content = json.loads(temp)
+        # content = JSON.parse(content).
+        print(content)
+        # Enter user only if there are no errors
+        # if not anyErr:
+        mongoDB.adopters.insert_one({
+            "name": content[name],
+            "email": content.email,
+            # "password": generate_password_hash(form.password1.data),
+            # "isAdmin": False
+            "problem": content.problem,
+            "description": content.description,
+            "latitude": content.latitude,
+            "longitude": content.longitude,
+        })
+        flash("Request successfully submitted!", category='success')
+        return 'ok'
 
 @app.route('/social_media_flags')
 @login_required
