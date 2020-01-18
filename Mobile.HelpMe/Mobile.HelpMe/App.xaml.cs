@@ -1,4 +1,6 @@
 ﻿using System;
+using FreshMvvm;
+using Mobile.HelpMe.PageModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +12,14 @@ namespace Mobile.HelpMe
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            var mainpage = new FreshTabbedNavigationContainer();
+
+            mainpage.AddTab<MainPageModel>("Home", null);
+            mainpage.AddTab<MainPageModel>("Help Me", null);
+            mainpage.AddTab<MainPageModel>("Help You", null);
+
+
+            MainPage = mainpage;
         }
 
         protected override void OnStart()

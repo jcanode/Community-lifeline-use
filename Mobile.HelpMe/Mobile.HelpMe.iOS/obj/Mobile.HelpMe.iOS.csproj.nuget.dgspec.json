@@ -38,11 +38,11 @@
           "dependencies": {
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.2.0, )"
+              "version": "[1.3.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.2.0.709249, )"
+              "version": "[4.4.0.991477, )"
             }
           }
         }
@@ -91,6 +91,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "FreshMvvm": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -103,11 +107,11 @@
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.2.0, )"
+              "version": "[1.3.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.2.0.709249, )"
+              "version": "[4.4.0.991477, )"
             }
           },
           "imports": [
@@ -120,7 +124,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
         }
       }
     }
