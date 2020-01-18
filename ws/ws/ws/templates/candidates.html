@@ -8,13 +8,11 @@
     <thead>
         <tr>
             <th>Name</th>
-            <th>Age</th>
-            <th>Phone</th>
+          
             <th>Email</th>
-            <th>Address</th>
-            <th>Compatability Score</th>
-            <th>Full Profile</th>
-            <th>Links</th>
+           
+            <th>help rating</th>
+           
         </tr>
     </thead>
     <tbody></tbody>
@@ -36,15 +34,11 @@
             bSort: false,
             columns: [
                 { data: "name" },
-                { data: "age" },
-                { data: "phone" },
                 { data: "email" },
-                { data: "address" },
-                { data: "score" },
-                { data: "full profile" },
-                { data: null, render: function (data, type, row) {
-                    return '<a href="social_media_flags?id=' + row["id"] + '">Social Media Flags</a>'
-                }}
+              
+                { data: "helprating" },
+              
+              
             ]
         });
     });
