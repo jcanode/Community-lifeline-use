@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{86609E0D-0CCB-4308-A367-98387F119346}|Default">
+  <MonoDevelop.Ide.ItemProperties.Mobile.HelpMe FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Mobile.HelpMe/MainPage.xaml">
+    <Files>
+      <File FileName="Mobile.HelpMe/MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Mobile.HelpMe/MainPage.xaml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Mobile.HelpMe" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Mobile.HelpMe.iOS FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Mobile.HelpMe.Android FirstBuild="True" PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
