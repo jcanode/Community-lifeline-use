@@ -15,8 +15,8 @@ namespace Mobile.HelpMe
             var mainpage = new FreshTabbedNavigationContainer();
 
             mainpage.AddTab<MainPageModel>("Home", null);
-            mainpage.AddTab<MainPageModel>("Help Me", null);
-            mainpage.AddTab<MainPageModel>("Help You", null);
+            mainpage.AddTab<HelpMePageModel>("Help Me", null);
+            mainpage.AddTab<HelpYouPageModel>("Help You", null);
 
 
             MainPage = mainpage;

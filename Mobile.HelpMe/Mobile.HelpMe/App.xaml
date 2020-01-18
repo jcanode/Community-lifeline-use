@@ -1,5 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Mobile.HelpMe.App">
     <Application.Resources>
+        <Color x:Key="PageBackgroundColor">#A77CCC</Color>
+        <Color x:Key="ListItemBackgroundColor">#562880</Color>
+        <Color x:Key="EntryBackgroundColor">#D19CFF</Color>
+        <Color x:Key="FormBoxBackgroundColor">#562880</Color>
+        <Color x:Key="ListTextColor">White</Color>
+        <Style x:Key="ListViewItemText" TargetType="Label">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+        </Style>
+        <Style x:Key="ListViewItemHeaderText" TargetType="Label">
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="HorizontalOptions" Value="Center"/>
+        </Style>
+        <Style x:Key="EntryStyle" TargetType="Entry">
+            <Setter Property="PlaceholderColor" Value="White"/>
+            <Setter Property="BackgroundColor" Value="#562880"/>
+        </Style>
     </Application.Resources>
 </Application>

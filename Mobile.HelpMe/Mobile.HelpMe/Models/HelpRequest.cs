@@ -9,5 +9,9 @@ namespace Mobile.HelpMe.Models
         public string Description { get; set; }
         public string Username { get; set; }
         public string UserEmail { get; set; }
+        public string Location
+        {
+            get => $"{Latitude}, {Longitude}";
+        }
     }
 }

@@ -11,5 +11,10 @@ namespace Mobile.HelpMe.Pages
         {
             InitializeComponent();
         }
+
+        void Picker_SelectedIndexChanged(System.Object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

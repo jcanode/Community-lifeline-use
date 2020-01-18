@@ -1098,9 +1098,13 @@ Function=NetSecurityNative_ReleaseCred
 	/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.dll
 Function=NetSecurityNative_InitSecContext
 	/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_InitSecContextEx
+	/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.dll
 Function=NetSecurityNative_AcceptSecContext
 	/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.dll
 Function=NetSecurityNative_DeleteSecContext
+	/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_GetUser
 	/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.dll
 Function=NetSecurityNative_Wrap
 	/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.dll

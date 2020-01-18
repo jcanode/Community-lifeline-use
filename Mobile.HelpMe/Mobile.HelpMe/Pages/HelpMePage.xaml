@@ -1,10 +1,44 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Mobile.HelpMe.Pages.HelpMePage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile.HelpMe.Pages.HelpMePage"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Problem: "/>
-            <Label Text="Description: "/>
-            <Button Text="Request Help"/>
-        </StackLayout>
+        <AbsoluteLayout BackgroundColor="{StaticResource PageBackgroundColor}"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand">
+            <Label Text="Request Help" FontSize="34" FontAttributes="Bold" TextColor="White"
+                   AbsoluteLayout.LayoutBounds=".5, 0, 1, .2"
+                   AbsoluteLayout.LayoutFlags="All"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            <Frame AbsoluteLayout.LayoutBounds=".5, .3, .9, .4"
+                             AbsoluteLayout.LayoutFlags="All"
+                             BackgroundColor="{StaticResource FormBoxBackgroundColor}"
+                             CornerRadius="10">
+                <StackLayout Spacing="20">
+                    <Picker ItemsSource="{Binding Categories}"
+                            Title="Select A Problem Category"
+                            TitleColor="White"
+                            TextColor="White"
+                            SelectedIndexChanged="Picker_SelectedIndexChanged"/>
+                    <Picker ItemsSource="{Binding ProblemList}"/>
+                    <Entry Placeholder="Description.."
+                           Style="{StaticResource EntryStyle}"/>
+                </StackLayout>
+            </Frame>
+            <StackLayout AbsoluteLayout.LayoutBounds=".5, .5, .3, .4"
+                         AbsoluteLayout.LayoutFlags="All"
+                         VerticalOptions="Center">
+                    <Button BackgroundColor="{StaticResource EntryBackgroundColor}"
+                            Text="Submit"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            TextColor="White"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            CornerRadius="5"/>
+            </StackLayout>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
