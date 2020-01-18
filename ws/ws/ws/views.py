@@ -176,20 +176,17 @@ def csv_download():
        return output
    return redirect(url_for('csv_view'))
 
-@app.route('/adopter_list')
+@app.route('/api/users')
 @login_required
-def adopter_list():
+def getUsers():
    output = []
    documents = mongoDB.adopters.find()
+   
    for document in documents:
        output.append({
            "name": col_result(document, "name"),
-           "age": col_result(document, "age"),
-           "phone": col_result(document, "phone"),
            "email": col_result(document, "email"),
-           "address": col_result(document, "address"),
-           "score": col_result(document, "score"),
-           "full profile": col_result(document, "full profile"),
+           "helprating": col_result(document, "score"),
            "id": str(document["_id"])
        })
    count = len(output)

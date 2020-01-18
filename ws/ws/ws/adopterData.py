@@ -12,9 +12,9 @@ age = 5
 @app.route("/adopterData")
 def adopterData(): 
     mongoDB.adopters.insert_one({
-        "AnimalType": "dog",
-        "homeType":"apartment",
-        "homeStatus":"own",  
+        "AnimalType": "hackaztest",
+        "homeType":"hackaztest",
+        "homeStatus":"hackaztest",  
         "planToMove": "",
         "do-not-adopt": False,
         "Previous Pets": "yes",
