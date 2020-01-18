@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/Mobile.HelpMe.Android.csproj": {}
+    "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/Mobile.HelpMe.Android.csproj": {}
   },
   "projects": {
-    "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/Mobile.HelpMe.Android.csproj": {
+    "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/Mobile.HelpMe.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/Mobile.HelpMe.Android.csproj",
+        "projectUniqueName": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/Mobile.HelpMe.Android.csproj",
         "projectName": "Mobile.HelpMe.Android",
-        "projectPath": "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/Mobile.HelpMe.Android.csproj",
-        "packagesPath": "/Users/Joe/.nuget/packages/",
-        "outputPath": "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/",
+        "projectPath": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/Mobile.HelpMe.Android.csproj",
+        "packagesPath": "/Users/joesamyn/.nuget/packages/",
+        "outputPath": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "/Users/Joe/.config/NuGet/NuGet.Config"
+          "/Users/joesamyn/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "monoandroid90"
@@ -26,8 +26,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj": {
-                "projectPath": "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj"
+              "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj": {
+                "projectPath": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj"
               }
             }
           }
@@ -52,20 +52,17 @@
         }
       }
     },
-    "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj": {
+    "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj",
+        "projectUniqueName": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj",
         "projectName": "Mobile.HelpMe",
-        "projectPath": "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj",
-        "packagesPath": "/Users/Joe/.nuget/packages/",
-        "outputPath": "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/obj/",
+        "projectPath": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj",
+        "packagesPath": "/Users/joesamyn/.nuget/packages/",
+        "outputPath": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "/Users/Joe/.config/NuGet/NuGet.Config"
+          "/Users/joesamyn/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -120,7 +117,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
         }
       }
     }

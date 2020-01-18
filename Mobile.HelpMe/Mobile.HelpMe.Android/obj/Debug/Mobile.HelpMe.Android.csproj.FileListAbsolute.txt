@@ -482,4 +482,3 @@
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/stamp/_GenerateJavaStubs.stamp
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
-/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/stamp/SetupDependenciesForDesigner.stamp

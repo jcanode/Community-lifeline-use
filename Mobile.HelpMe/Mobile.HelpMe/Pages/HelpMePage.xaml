@@ -20,8 +20,7 @@
                     <Picker ItemsSource="{Binding Categories}"
                             Title="Select A Problem Category"
                             TitleColor="White"
-                            TextColor="White"
-                            SelectedIndexChanged="Picker_SelectedIndexChanged"/>
+                            TextColor="White"/>
                     <Picker ItemsSource="{Binding ProblemList}"/>
                     <Entry Placeholder="Description.."
                            Style="{StaticResource EntryStyle}"/>

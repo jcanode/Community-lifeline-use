@@ -17,7 +17,8 @@ namespace Mobile.HelpMe
             mainpage.AddTab<MainPageModel>("Home", null);
             mainpage.AddTab<HelpMePageModel>("Help Me", null);
             mainpage.AddTab<HelpYouPageModel>("Help You", null);
-
+            mainpage.AddTab<SignUpPageModel>("Sign Up", null);
+            mainpage.AddTab<SignInPageModel>("Sign In", null);
 
             MainPage = mainpage;
         }
