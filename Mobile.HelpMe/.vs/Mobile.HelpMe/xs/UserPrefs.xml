@@ -1,15 +1,19 @@
 ﻿<Properties StartupConfiguration="{86609E0D-0CCB-4308-A367-98387F119346}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Mobile.HelpMe/PageModels/HelpMePageModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Mobile.HelpMe/Pages/SignUpPage.xaml.cs">
     <Files>
       <File FileName="Mobile.HelpMe/Pages/HelpMePage.xaml" Line="24" Column="63" />
-      <File FileName="Mobile.HelpMe/Pages/HelpMePage.xaml.cs" Line="1" Column="1" />
-      <File FileName="Mobile.HelpMe/Models/HelpRequest.cs" Line="8" Column="27" />
-      <File FileName="Mobile.HelpMe/PageModels/HelpYouPageModel.cs" Line="6" Column="55" />
-      <File FileName="Mobile.HelpMe/Pages/HelpYouPage.xaml" Line="33" Column="25" />
-      <File FileName="Mobile.HelpMe/Pages/HelpYouPage.xaml.cs" Line="64" Column="43" />
-      <File FileName="Mobile.HelpMe/App.xaml.cs" Line="1" Column="1" />
-      <File FileName="Mobile.HelpMe/App.xaml" Line="21" Column="64" />
-      <File FileName="Mobile.HelpMe/PageModels/HelpMePageModel.cs" Line="1" Column="1" />
+      <File FileName="Mobile.HelpMe/Pages/HelpMePage.xaml.cs" />
+      <File FileName="Mobile.HelpMe/Models/HelpRequest.cs" />
+      <File FileName="Mobile.HelpMe/PageModels/HelpYouPageModel.cs" />
+      <File FileName="Mobile.HelpMe/Pages/HelpYouPage.xaml" />
+      <File FileName="Mobile.HelpMe/Pages/HelpYouPage.xaml.cs" />
+      <File FileName="Mobile.HelpMe/App.xaml.cs" />
+      <File FileName="Mobile.HelpMe/App.xaml" />
+      <File FileName="Mobile.HelpMe/PageModels/HelpMePageModel.cs" Line="19" Column="2" />
+      <File FileName="Mobile.HelpMe/Pages/SignInPage.xaml" Line="1" Column="1" />
+      <File FileName="Mobile.HelpMe/Pages/SignInPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Mobile.HelpMe/Pages/SignUpPage.xaml" Line="1" Column="1" />
+      <File FileName="Mobile.HelpMe/Pages/SignUpPage.xaml.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,15 +21,8 @@
           <Node name="Mobile.HelpMe" expanded="True">
             <Node name="Mobile.HelpMe" expanded="True">
               <Node name="Models" expanded="True" />
-              <Node name="PageModels" expanded="True">
-                <Node name="HelpMePageModel.cs" selected="True" />
-              </Node>
-              <Node name="Pages" expanded="True">
-                <Node name="HelpMePage.xaml" expanded="True" />
-                <Node name="HelpYouPage.xaml" expanded="True" />
-                <Node name="MainPage.xaml" expanded="True" />
-              </Node>
-              <Node name="App.xaml" expanded="True" />
+              <Node name="PageModels" expanded="True" />
+              <Node name="Pages" expanded="True" />
             </Node>
             <Node name="Mobile.HelpMe.Android" expanded="True">
               <Node name="Resources" expanded="True">
@@ -39,7 +36,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Mobile.HelpMe.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.CF300EB2-4D4E-4831-B77F-842F2E6F3110" />
-  <MonoDevelop.Ide.ItemProperties.Mobile.HelpMe.Android PreferredExecutionTarget="Android.pixel_2_pie_9_0_api_28" />
+  <MonoDevelop.Ide.ItemProperties.Mobile.HelpMe.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" PreferredExecutionTarget="Android.pixel" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

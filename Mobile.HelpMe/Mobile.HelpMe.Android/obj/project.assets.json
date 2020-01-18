@@ -2092,20 +2092,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/joesamyn/.nuget/packages/": {}
+    "/Users/Joe/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/Mobile.HelpMe.Android.csproj",
+      "projectUniqueName": "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/Mobile.HelpMe.Android.csproj",
       "projectName": "Mobile.HelpMe.Android",
-      "projectPath": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/Mobile.HelpMe.Android.csproj",
-      "packagesPath": "/Users/joesamyn/.nuget/packages/",
-      "outputPath": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/",
+      "projectPath": "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/Mobile.HelpMe.Android.csproj",
+      "packagesPath": "/Users/Joe/.nuget/packages/",
+      "outputPath": "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/joesamyn/.config/NuGet/NuGet.Config"
+        "/Users/Joe/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "monoandroid90"
@@ -2116,8 +2116,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj": {
-              "projectPath": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj"
+            "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj": {
+              "projectPath": "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj"
             }
           }
         }

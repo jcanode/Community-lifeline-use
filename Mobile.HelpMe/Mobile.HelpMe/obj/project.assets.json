@@ -855,19 +855,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/joesamyn/.nuget/packages/": {}
+    "/Users/Joe/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj",
+      "projectUniqueName": "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj",
       "projectName": "Mobile.HelpMe",
-      "projectPath": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj",
-      "packagesPath": "/Users/joesamyn/.nuget/packages/",
-      "outputPath": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/obj/",
+      "projectPath": "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj",
+      "packagesPath": "/Users/Joe/.nuget/packages/",
+      "outputPath": "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/obj/",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/Users/joesamyn/.config/NuGet/NuGet.Config"
+        "/Users/Joe/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -922,7 +926,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
       }
     }
   }

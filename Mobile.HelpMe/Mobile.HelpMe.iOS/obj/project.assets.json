@@ -1320,20 +1320,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/joesamyn/.nuget/packages/": {}
+    "/Users/Joe/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/Mobile.HelpMe.iOS.csproj",
+      "projectUniqueName": "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/Mobile.HelpMe.iOS.csproj",
       "projectName": "Mobile.HelpMe.iOS",
-      "projectPath": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/Mobile.HelpMe.iOS.csproj",
-      "packagesPath": "/Users/joesamyn/.nuget/packages/",
-      "outputPath": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/obj/",
+      "projectPath": "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/Mobile.HelpMe.iOS.csproj",
+      "packagesPath": "/Users/Joe/.nuget/packages/",
+      "outputPath": "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/joesamyn/.config/NuGet/NuGet.Config"
+        "/Users/Joe/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
@@ -1344,8 +1344,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj": {
-              "projectPath": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj"
+            "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj": {
+              "projectPath": "/Users/Joe/Projects/C#/API_Tutorials/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj"
             }
           }
         }
