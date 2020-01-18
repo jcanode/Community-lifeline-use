@@ -12,21 +12,33 @@
                    AbsoluteLayout.LayoutFlags="All"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
-            <Frame AbsoluteLayout.LayoutBounds=".5, .3, .9, .4"
-                             AbsoluteLayout.LayoutFlags="All"
-                             BackgroundColor="{StaticResource FormBoxBackgroundColor}"
-                             CornerRadius="10">
+            <Frame AbsoluteLayout.LayoutBounds=".5, .4, .9, 1"
+                   AbsoluteLayout.LayoutFlags="All"
+                   BackgroundColor="{StaticResource FormBoxBackgroundColor}"
+                   CornerRadius="10"
+                   VerticalOptions="CenterAndExpand">
                 <StackLayout Spacing="20">
                     <Picker ItemsSource="{Binding Categories}"
+                            SelectedItem="{Binding SelectedCategory}"
                             Title="Select A Problem Category"
                             TitleColor="White"
                             TextColor="White"/>
-                    <Picker ItemsSource="{Binding ProblemList}"/>
+                    <Picker ItemsSource="{Binding CarProblems}"
+                            SelectedItem="{Binding SelectedProblem}"
+                            Title="Select A Car Problem"
+                            TitleColor="White"
+                            TextColor="White"
+                            IsVisible="{Binding ShowCarProblemList}"/>
+                    <Picker ItemsSource="{Binding NaturalDisasterProblems}"
+                            SelectedItem="{Binding SelectedProblem}"
+                            Title="Select A Natural Disaster Problem"
+                            TitleColor="White"
+                            TextColor="White"
+                            IsVisible="{Binding ShowNaturalDisasterList}"/>
                     <Entry Placeholder="Description.."
-                           Style="{StaticResource EntryStyle}"/>
-                </StackLayout>
-            </Frame>
-            <StackLayout AbsoluteLayout.LayoutBounds=".5, .5, .3, .4"
+                           Style="{StaticResource EntryStyle}"
+                           IsVisible="{Binding ShowDescription}"/>
+                    <StackLayout AbsoluteLayout.LayoutBounds=".5, .6, .3, .4"
                          AbsoluteLayout.LayoutFlags="All"
                          VerticalOptions="Center">
                     <Button BackgroundColor="{StaticResource EntryBackgroundColor}"
@@ -36,8 +48,12 @@
                             TextColor="White"
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
-                            CornerRadius="5"/>
-            </StackLayout>
+                            CornerRadius="5"
+                            Command="{Binding SubmitButtonClicked}"/>
+                    </StackLayout>
+                </StackLayout>
+                
+            </Frame>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -23,7 +23,7 @@ namespace Mobile.HelpMe.Pages
                 new HelpRequest
                 {
                     Username = "jcanode",
-                    Problem = ProblemEnum.FlatTire,
+                    Problem = "FlatTire",
                     Latitude = 34.13234,
                     Longitude = -110.83745
 
@@ -31,37 +31,42 @@ namespace Mobile.HelpMe.Pages
                 new HelpRequest
                 {
                     Username = "jcanode",
-                    Problem = ProblemEnum.FlatTire,
+                    Problem = "FlatTire",
                     Latitude = 34.13234,
                     Longitude = -110.83745
+
                 },
                 new HelpRequest
                 {
                     Username = "jcanode",
-                    Problem = ProblemEnum.FlatTire,
+                    Problem = "FlatTire",
                     Latitude = 34.13234,
                     Longitude = -110.83745
+
                 },
                 new HelpRequest
                 {
                     Username = "jcanode",
-                    Problem = ProblemEnum.FlatTire,
+                    Problem = "FlatTire",
                     Latitude = 34.13234,
                     Longitude = -110.83745
+
                 },
                 new HelpRequest
                 {
                     Username = "jcanode",
-                    Problem = ProblemEnum.FlatTire,
+                    Problem = "FlatTire",
                     Latitude = 34.13234,
                     Longitude = -110.83745
+
                 },
                 new HelpRequest
                 {
                     Username = "jcanode",
-                    Problem = ProblemEnum.FlatTire,
+                    Problem = "FlatTire",
                     Latitude = 34.13234,
                     Longitude = -110.83745
+
                 },
             };
         }

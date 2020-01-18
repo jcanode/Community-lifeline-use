@@ -18,7 +18,8 @@ namespace Mobile.HelpMe
             "Stuck",
             "Need Tow",
             "Jump Battery",
-            "Out Of Gas"
+            "Out Of Gas",
+            "Other"
         };
 
         public static IList<string> NaturalDisasterProblems { get; } = new List<string>
@@ -26,7 +27,12 @@ namespace Mobile.HelpMe
             "Stranded",
             "Need Medical Supplies",
             "Need Water",
-            "Need Food"
+            "Need Food",
+            "Other"
         };
+
+        public const string RequestSentTitle = "Request Sent";
+        public const string RequestSentMessage = "Your request has been sent out. ";
+        public const string OkayText = "Okay";
     }
 }
