@@ -1,37 +1,30 @@
-Description
----
+# Community Lifeline
 
-Application Candidate Tracker dynamically assigns compatibility scores to adoption candidates; generates tables for users and applicants; imports and exports csv; and automates vetting process for pet adoption.
 
-Reason
-----
+Have you ever needed help that did not require an emergency call to 9-1-1 but was still an emergency to you? It happens to numerous amounts of people everyday, whether they are located in an urban or rural area. Our goal with Help is to provide a platform that allows quick help requests that fellow humans can fulfill for you right away! Your safety is important.
 
-Manual application processes are lengthy and subject to time delays. The ability to automate the background process allows NPO volunteers and directors to devote more time to animal rescue without sacrificing on application standards. Furthermore, the user interface allows administrators and NPO users to easily access, download, and import data regarding applicant scores and home situations. Overall, Application Candidate Tracker optimizes the application process: thereby, increasing the impact of Saving One Life.
+## Getting Started
 
-Installation
----
+Instructions for project...
 
-Install mongoDB from https://www.mongodb.com/what-is-mongodb.
+### Installing
 
-Clone GitHub repo.
+How to install...
 
-Build and run docker file.
+## Built With
 
-Alternatively run start.bat/start.sh
+* [Xamarin](https://dotnet.microsoft.com/apps/xamarin) - Mobile App Cross-platform
+* [mongoDB](https://www.mongodb.com/) - Cloud Database
 
-Usage
-----
+## Authors
 
-Application Candidate Tracker creates data tables and csv files of applicant information for use in application processing. It processes applicant forms and returns scores alongside the entered information: allowing directors and volunteers at Saving One Life to efficiently and comprehensively judge applications. 
+* **Joe Samyn** - *Xamarin UI implementation* - [View Profile](https://github.com/jsamyn)
+* **Justin Canode** - *backend API implementation* - [View Profile](https://github.com/jcanode)
+* **James Fritz** - *Xamarin UI implementation* - [View Profile](https://github.com/James-Fritz)
+* **Jared Wermager** - *App flow and documentation* - [View Profile](https://github.com/jarheadwerm)
 
-Requirements
-----
-- MongoDB
-- Docker
+## Acknowledgments
 
-Credits
-----
-
-Creators: Justin Canode, Stone Sommers, Emilee Spence
-
-Libraries: Flask, Pandas, io, csv, werkzeug.security
+* Major League Hacking - [Website](https://mlh.io/)
+* University of Arizona - [Website](https://www.arizona.edu/)
+* To all of our teachers and mentors - Thank you!
