@@ -1,6 +1,8 @@
 ﻿using System;
 using FreshMvvm;
+using Mobile.HelpMe.Interfaces.Services;
 using Mobile.HelpMe.PageModels;
+using Mobile.HelpMe.Services;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,6 +14,8 @@ namespace Mobile.HelpMe
         {
             InitializeComponent();
 
+            FreshIOC.Container.Register<IGeolocationCalculations, GeolocationCalculations>().AsSingleton();
+
             var mainpage = new FreshTabbedNavigationContainer();
 
             mainpage.AddTab<MainPageModel>("Home", null);
@@ -21,6 +25,7 @@ namespace Mobile.HelpMe
             mainpage.AddTab<SignInPageModel>("Sign In", null);
 
             MainPage = mainpage;
+            
         }
 
         protected override void OnStart()

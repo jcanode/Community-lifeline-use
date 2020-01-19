@@ -1,34 +1,36 @@
 ﻿<Properties StartupConfiguration="{86609E0D-0CCB-4308-A367-98387F119346}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Mobile.HelpMe/PageModels/MainPageModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Mobile.HelpMe/Interfaces/Services/IUserService.cs">
     <Files>
-      <File FileName="Mobile.HelpMe/PageModels/HelpMePageModel.cs" Line="128" Column="2" />
-      <File FileName="Mobile.HelpMe/Pages/HelpMePage.xaml" Line="52" Column="66" />
-      <File FileName="Mobile.HelpMe/PageModels/BaseViewModel.cs" Line="26" Column="1" />
-      <File FileName="Mobile.HelpMe/AppConstants.cs" Line="36" Column="47" />
-      <File FileName="Mobile.HelpMe/Models/HelpRequest.cs" Line="18" Column="1" />
-      <File FileName="Mobile.HelpMe/Pages/MainPage.xaml" Line="13" Column="53" />
-      <File FileName="Mobile.HelpMe/App.xaml" Line="28" Column="57" />
-      <File FileName="Mobile.HelpMe/PageModels/MainPageModel.cs" Line="9" Column="16" />
+      <File FileName="Mobile.HelpMe/Interfaces/Repository/IUserRepository.cs" Line="15" Column="1" />
+      <File FileName="Mobile.HelpMe/Interfaces/Repository/IHelpRequestRepository.cs" Line="10" Column="62" />
+      <File FileName="Mobile.HelpMe/Interfaces/Services/IHelpRequestService.cs" Line="10" Column="54" />
+      <File FileName="Mobile.HelpMe/Models/ResolvedRequest.cs" Line="6" Column="34" />
+      <File FileName="Mobile.HelpMe/Models/HelpRequest.cs" Line="16" Column="1" />
+      <File FileName="Mobile.HelpMe/Models/ResolvedProblem.cs" Line="1" Column="1" />
+      <File FileName="Mobile.HelpMe/Models/User.cs" Line="1" Column="1" />
+      <File FileName="Mobile.HelpMe/Interfaces/Services/IUserService.cs" Line="6" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Mobile.HelpMe" expanded="True">
+            <Node name="Common.Gis" expanded="True">
+              <Node name="Calculations" expanded="True" />
+              <Node name="Helpers" expanded="True" />
+            </Node>
             <Node name="Mobile.HelpMe" expanded="True">
-              <Node name="Models" expanded="True" />
-              <Node name="PageModels" expanded="True">
-                <Node name="MainPageModel.cs" selected="True" />
+              <Node name="Interfaces" expanded="True">
+                <Node name="Repository" expanded="True" />
+                <Node name="Services" expanded="True">
+                  <Node name="IUserService.cs" selected="True" />
+                </Node>
               </Node>
+              <Node name="Models" expanded="True" />
               <Node name="Pages" expanded="True">
                 <Node name="HelpYouPage.xaml" expanded="True" />
-                <Node name="MainPage.xaml" expanded="True" />
               </Node>
+              <Node name="Services" expanded="True" />
               <Node name="App.xaml" expanded="True" />
-            </Node>
-            <Node name="Mobile.HelpMe.Android" expanded="True">
-              <Node name="Resources" expanded="True">
-                <Node name="values" expanded="True" />
-              </Node>
             </Node>
           </Node>
         </State>

@@ -482,3 +482,7 @@
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/stamp/_GenerateJavaStubs.stamp
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
+/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/bin/Debug/PrePass.Common.Gis.dll
+/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/bin/Debug/PrePass.Common.Gis.pdb
+/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/assets/PrePass.Common.Gis.dll
+/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/assets/PrePass.Common.Gis.pdb

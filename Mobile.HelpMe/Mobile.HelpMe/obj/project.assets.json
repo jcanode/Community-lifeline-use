@@ -130,6 +130,16 @@
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
         }
+      },
+      "PrePass.Common.Gis/1.1.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/PrePass.Common.Gis.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PrePass.Common.Gis.dll": {}
+        }
       }
     }
   },
@@ -843,6 +853,11 @@
         "xamarin.forms.4.4.0.991477.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "PrePass.Common.Gis/1.1.0": {
+      "type": "project",
+      "path": "../../../../../CVO_Projects/PrePass.Mobile/Dev/Source/Xam.Plugin/Common.Gis/Common.Gis/Common.Gis.csproj",
+      "msbuildProject": "../../../../../CVO_Projects/PrePass.Mobile/Dev/Source/Xam.Plugin/Common.Gis/Common.Gis/Common.Gis.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -850,6 +865,7 @@
       "FreshMvvm >= 3.0.0",
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 12.0.3",
+      "PrePass.Common.Gis >= 1.1.0",
       "Xamarin.Essentials >= 1.3.1",
       "Xamarin.Forms >= 4.4.0.991477"
     ]
@@ -877,7 +893,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/joesamyn/CVO_Projects/PrePass.Mobile/Dev/Source/Xam.Plugin/Common.Gis/Common.Gis/Common.Gis.csproj": {
+              "projectPath": "/Users/joesamyn/CVO_Projects/PrePass.Mobile/Dev/Source/Xam.Plugin/Common.Gis/Common.Gis/Common.Gis.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

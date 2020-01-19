@@ -14,3 +14,7 @@
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/obj/Debug/netstandard2.0/Mobile.HelpMe.dll
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/obj/Debug/netstandard2.0/ref/Mobile.HelpMe.dll
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/obj/Debug/netstandard2.0/Mobile.HelpMe.pdb
+/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/bin/Debug/netstandard2.0/PrePass.Common.Gis.dll
+/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/bin/Debug/netstandard2.0/PrePass.Common.Gis.pdb
+/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/obj/Debug/netstandard2.0/Mobile.HelpMe.csprojAssemblyReference.cache
+/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/obj/Debug/netstandard2.0/Mobile.HelpMe.csproj.CopyComplete
