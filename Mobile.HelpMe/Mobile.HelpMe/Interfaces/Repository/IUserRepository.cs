@@ -6,9 +6,9 @@ namespace Mobile.HelpMe.Interfaces.Repository
 {
     public interface IUserRepository
     {
-        Task CreateUser(string username, string password, string email);
+        Task CreateUser(string jsonData);
         Task<User> FindUser(string username);
-        Task<User> Login(string username, string password);
+        Task<User> Login(string jsonData);
         Task UpdateUser(User user);
     }
 }

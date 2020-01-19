@@ -34,14 +34,27 @@ namespace Mobile.HelpMe.PageModels
             }
         }
 
-        private string _selectedProblem;
-        public string SelectedProblem
+        private string _selectedNdProblem;
+        public string SelectedNdProblem
         {
-            get => _selectedProblem;
+            get => _selectedNdProblem;
             set
             {
-                SetValue(ref _selectedProblem, value);
-                ShouldShowDescription(_selectedProblem);
+                ShouldShowDescription(value);
+                SetValue(ref _selectedNdProblem, value);
+                
+            }
+        }
+
+        private string _selectedCarProblem;
+        public string SelectedCarProblem
+        {
+            get => _selectedCarProblem;
+            set
+            {
+                ShouldShowDescription(value);
+                SetValue(ref _selectedCarProblem, value);
+
             }
         }
 
@@ -91,6 +104,8 @@ namespace Mobile.HelpMe.PageModels
         {
             if (selectedProblem.Equals("Other"))
                 ShowDescription = true;
+            else
+                ShowDescription = false;
         }
 
         private void DeterminePickerToShow(string selectedCategory)
@@ -112,7 +127,7 @@ namespace Mobile.HelpMe.PageModels
         {
             var request = new HelpRequest
             {
-                Problem = SelectedProblem,
+                Problem = SelectedCategory == "Car" ? SelectedCarProblem : SelectedNdProblem,
                 Description = ProblemDesc,
                 Latitude = 97676,
                 Longitude = 9372645,

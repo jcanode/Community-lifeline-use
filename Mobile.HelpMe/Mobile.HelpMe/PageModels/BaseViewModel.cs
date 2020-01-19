@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 using FreshMvvm;
 
 namespace Mobile.HelpMe.PageModels
@@ -20,6 +21,18 @@ namespace Mobile.HelpMe.PageModels
             if (EqualityComparer<T>.Default.Equals(backingField, value)) return;
             backingField = value;
             OnPropertyChanged(propertyName);
+        }
+
+        public async Task NavigateToMainTabbedPage()
+        {
+            var tabbedNav = new FreshTabbedNavigationContainer();
+            tabbedNav.AddTab<MainPageModel>("Home", null);
+            tabbedNav.AddTab<HelpMePageModel>("Help Me", null);
+            tabbedNav.AddTab<HelpYouPageModel>("Help You", null);
+            tabbedNav.AddTab<SignUpPageModel>("Sign Up", null);
+            tabbedNav.AddTab<SignInPageModel>("Sign In", null);
+
+            await CoreMethods.PushNewNavigationServiceModal(tabbedNav);
         }
     }
 }

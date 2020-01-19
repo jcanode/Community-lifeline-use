@@ -4,7 +4,9 @@
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/bin/Debug/com.samynsoftware.helpme-Signed.aab
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/bin/Debug/com.samynsoftware.helpme-Signed.apk
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/bin/Debug/Mobile.HelpMe.dll
+/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/bin/Debug/PrePass.Common.Gis.dll
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/bin/Debug/Mobile.HelpMe.pdb
+/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/bin/Debug/PrePass.Common.Gis.pdb
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/MonoAndroid,Version=v9.0.AssemblyAttributes.cs
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/build.props
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/adb.props
@@ -84,6 +86,8 @@
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/assets/mscorlib.pdb
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/assets/netstandard.dll
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/assets/Newtonsoft.Json.dll
+/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/assets/PrePass.Common.Gis.dll
+/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/assets/PrePass.Common.Gis.pdb
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/assets/System.ComponentModel.Composition.dll
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/assets/System.ComponentModel.Composition.pdb
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/assets/System.Core.dll
@@ -269,8 +273,6 @@
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/src/crc64a0e0a82d0db9a07d/OrientationSensorListener.java
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/src/crc64a0e0a82d0db9a07d/BatteryBroadcastReceiver.java
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/src/crc64a0e0a82d0db9a07d/GyroscopeListener.java
-/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/src/crc64a98abb514ffad9f1/KeepAliveService.java
-/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/src/crc64a98abb514ffad9f1/CustomTabsServiceConnectionImpl.java
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/src/crc643f46942d9dd1fff9/ShellSearchViewAdapter_ObjectWrapper.java
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/src/crc643f46942d9dd1fff9/StructuredItemsViewAdapter_2.java
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/src/crc643f46942d9dd1fff9/NativeViewWrapperRenderer.java
@@ -434,7 +436,8 @@
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/src/crc643f46942d9dd1fff9/StepperRenderer.java
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/src/crc6414252951f3f66c67/RecyclerViewScrollListener_2.java
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/src/xamarin/essentials/fileProvider.java
-/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/src/crc64b507e302e79b1c97/MainActivity.java
+/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/src/crc64a98abb514ffad9f1/KeepAliveService.java
+/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/src/crc64a98abb514ffad9f1/CustomTabsServiceConnectionImpl.java
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/src/crc64720bb2db43a66fe9/NavigationPageRenderer_DrawerMultiplexedListener.java
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/src/crc64720bb2db43a66fe9/FrameRenderer.java
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/src/crc64720bb2db43a66fe9/FormsViewPager.java
@@ -454,6 +457,7 @@
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/src/crc64720bb2db43a66fe9/MasterDetailContainer.java
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/src/crc64720bb2db43a66fe9/PickerRendererBase_1.java
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/src/crc64720bb2db43a66fe9/SwitchRenderer.java
+/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/src/crc64b507e302e79b1c97/MainActivity.java
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/bin/packaged_resources
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/src/com/samynsoftware/helpme/R.java
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/typemap.jm.arm64-v8a.o
@@ -482,7 +486,3 @@
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/stamp/_GenerateJavaStubs.stamp
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
-/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/bin/Debug/PrePass.Common.Gis.dll
-/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/bin/Debug/PrePass.Common.Gis.pdb
-/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/assets/PrePass.Common.Gis.dll
-/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.Android/obj/Debug/android/assets/PrePass.Common.Gis.pdb

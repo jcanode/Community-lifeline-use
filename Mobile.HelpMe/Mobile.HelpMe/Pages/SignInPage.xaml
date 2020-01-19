@@ -2,46 +2,49 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mobile.HelpMe.Pages.SignInPage"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource PageBackgroundColor}">
 
     <ContentPage.Content>
-        <AbsoluteLayout BackgroundColor="{StaticResource PageBackgroundColor}"
-                            HorizontalOptions="FillAndExpand"
-                            VerticalOptions="FillAndExpand">
+        <AbsoluteLayout>
 
             <Label Text="Sign In" FontSize="34" FontAttributes="Bold" TextColor="White"
-                       AbsoluteLayout.LayoutBounds=".5, 0, 1, .2"
+                       AbsoluteLayout.LayoutBounds=".5, .03, 1, .2"
                        AbsoluteLayout.LayoutFlags="All"
                        HorizontalOptions="Center"
                        VerticalOptions="Center" />
 
-            <Frame AbsoluteLayout.LayoutBounds=".5, .3, .9, .4"
-                             AbsoluteLayout.LayoutFlags="All"
-                             BackgroundColor="{StaticResource FormBoxBackgroundColor}"
-                             CornerRadius="10">
+            <Frame AbsoluteLayout.LayoutBounds=".5, .5, .9, .5"
+                    AbsoluteLayout.LayoutFlags="All"
+                    BackgroundColor="{StaticResource FormBoxBackgroundColor}"
+                    CornerRadius="10">
 
-                <StackLayout Spacing="20">
-                        <Entry Placeholder ="Username" TextColor="White" Style="{StaticResource EntryStyle}"/>
-                        <Entry Placeholder ="Password" TextColor="White" Style="{StaticResource EntryStyle}"/>
-                        <!--<Label Text="Invalid credentials entered"
-                               IsVisible="{Binding AreCredentialsInvalid}"
-                               TextColor="Red"/>-->
+                <StackLayout Spacing="20"
+                             Padding="0, 15, 0, 0"
+                            AbsoluteLayout.LayoutBounds=".5, 0.6, .7, .7"
+                            AbsoluteLayout.LayoutFlags="All">
+                    <Entry Placeholder ="Username" TextColor="White" Style="{StaticResource EntryStyle}" Text="{Binding Username}"/>
+                    <Entry Placeholder ="Password" TextColor="White" Style="{StaticResource EntryStyle}" IsPassword="True" Text="{Binding Password}"/>
+                    <StackLayout Margin="0, 20, 0, 0">
+                        <Button BackgroundColor="{StaticResource EntryBackgroundColor}"
+                                Text="Sign In"
+                                FontSize="24"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                CornerRadius="5"
+                                Command="{Binding SignInClicked}"/>
+                        <Button BackgroundColor="Transparent"
+                                Text="Sign Up"
+                                FontSize="18"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                HorizontalOptions="Center"
+                                Command="{Binding SignUpClicked}"/>
+                    </StackLayout>
                 </StackLayout>
             </Frame>
-
-            <StackLayout AbsoluteLayout.LayoutBounds=".5, .5, .3, .4"
-                AbsoluteLayout.LayoutFlags="All"
-                VerticalOptions="Center">
-
-                <Button BackgroundColor="{StaticResource EntryBackgroundColor}"
-                    Text="Submit"
-                    FontSize="24"
-                    FontAttributes="Bold"
-                    TextColor="White"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"
-                    CornerRadius="5"/>
-            </StackLayout>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -6,8 +6,8 @@ namespace Mobile.HelpMe.Interfaces.Repository
 {
     public interface IHelpRequestRepository
     {
-        Task CreateHelpRequest(HelpRequest request);
+        Task CreateHelpRequest(string request);
         Task<HelpRequest> GetCurrentRequest(string username);
-        Task ResolveHelpRequest(HelpRequest request);
+        Task ResolveHelpRequest(string resolveRequest);
     }
 }

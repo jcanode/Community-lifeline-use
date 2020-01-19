@@ -24,13 +24,13 @@
                             TitleColor="White"
                             TextColor="White"/>
                     <Picker ItemsSource="{Binding CarProblems}"
-                            SelectedItem="{Binding SelectedProblem}"
+                            SelectedItem="{Binding SelectedCarProblem}"
                             Title="Select A Car Problem"
                             TitleColor="White"
                             TextColor="White"
                             IsVisible="{Binding ShowCarProblemList}"/>
                     <Picker ItemsSource="{Binding NaturalDisasterProblems}"
-                            SelectedItem="{Binding SelectedProblem}"
+                            SelectedItem="{Binding SelectedNdProblem}"
                             Title="Select A Natural Disaster Problem"
                             TitleColor="White"
                             TextColor="White"

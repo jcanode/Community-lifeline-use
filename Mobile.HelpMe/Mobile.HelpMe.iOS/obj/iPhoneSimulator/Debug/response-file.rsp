@@ -208,6 +208,7 @@
 -r=/Users/joesamyn/.nuget/packages/xamarin.forms/4.4.0.991477/lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/joesamyn/.nuget/packages/xamarin.forms/4.4.0.991477/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/bin/Debug/netstandard2.0/Mobile.HelpMe.dll
+-r=/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/bin/Debug/netstandard2.0/PrePass.Common.Gis.dll
  --target-framework=Xamarin.iOS,v1.0
 --root-assembly=/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/bin/iPhoneSimulator/Debug/Mobile.HelpMe.iOS.exe
  

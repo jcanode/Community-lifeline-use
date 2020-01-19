@@ -50,7 +50,9 @@
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/bin/iPhoneSimulator/Debug/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/bin/iPhoneSimulator/Debug/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/bin/iPhoneSimulator/Debug/Mobile.HelpMe.dll
+/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/bin/iPhoneSimulator/Debug/PrePass.Common.Gis.dll
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/bin/iPhoneSimulator/Debug/Mobile.HelpMe.pdb
+/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/bin/iPhoneSimulator/Debug/PrePass.Common.Gis.pdb
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/obj/iPhoneSimulator/Debug/actool/_PartialAppManifest.items
 /Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
