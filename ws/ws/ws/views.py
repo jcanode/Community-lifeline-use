@@ -67,8 +67,22 @@ def users():
         year=datetime.now().year
     )
 
-@app.route('/register', methods=['GET', 'POST'])
+@app.route('/register', methods=['GET', 'POST']) #TODO REDO THIS TO ACCEPT JSON POST
 def register():
+    """New JSON registration"""
+    # data = request.get_json()
+
+    # user = auth.getUserByEmail(data.email)
+    # if user != None:
+    #     flash("Email already exists in database.", category='error')
+    #     anyErr = True
+    # if not anyErr:
+    #     mongoDB.user.insert_one(data)
+    #     flash("User successfully registered", category=success)
+    #     return redirect(request.args.get("returnurl") or url_for("login"))
+    # return render_template('')
+
+"""old registration form"""
     form = RegisterForm()
     if request.method == 'POST' and form.validate_on_submit():
         anyErr = False
@@ -198,7 +212,8 @@ def getUsers():
            "latitude": col_result(document, "latitude"),
            "longitude": col_result(document, "longitude"),
             "description": col_result(document, "description"),
-           "id": str(document["_id"])
+            "uid": col_result(document, "uid"),
+            "id": str(document["_id"])
        })
    count = len(output)
    return jsonify({
@@ -245,27 +260,27 @@ def csv_upload():
 
 
 
-@app.route('/api/requestHelp/', methods=['POST'])
+@app.route('/api/requestHelp/<int:uid>', methods=['POST'])
 @csrf.exempt
 # @csrf.exempt
-def requestHelp():
+def requestHelp(uid):
         data = request.get_json()
-        temp = json.dumps(data)
-        content = json.loads(temp)
+        # temp = json.dumps(data)
+        # content = json.loads(temp)
         # content = JSON.parse(content).
-        print(content)
+        print(data)
         # Enter user only if there are no errors
         # if not anyErr:
-        mongoDB.adopters.insert_one({
-            "name": content[name],
-            "email": content.email,
-            # "password": generate_password_hash(form.password1.data),
-            # "isAdmin": False
-            "problem": content.problem,
-            "description": content.description,
-            "latitude": content.latitude,
-            "longitude": content.longitude,
-        })
+        mongoDB.adopters.insert_one(data)
+            # "name": content[name],
+            # "email": content.email,
+            # # "password": generate_password_hash(form.password1.data),
+            # # "isAdmin": False
+            # "problem": content.problem,
+            # "description": content.description,
+            # "latitude": content.latitude,
+            # "longitude": content.longitude,
+        
         flash("Request successfully submitted!", category='success')
         return 'ok'
 
@@ -279,3 +294,25 @@ def social_media_flags():
        year=datetime.now().year,
        userID = id
    )
+
+@app.route('/api/resolve/<int:uuid>', methods=["GET", "POST"])
+@login_required
+def reslove_request(uuid):
+    """Sent to"""
+    helprequest = mongoDB.adopters.find_one({"uid": uuid})
+    
+    data = request.get_json()
+
+    #after it has been resolved
+        #mongoDB.adopters.delete_one({"uid": uuid})
+    """
+
+    
+    resolve
+    {
+        "victim": "string", 
+        "help": "string",
+        "victim": "string"
+    }
+    """
+    
