@@ -41,7 +41,7 @@ namespace Mobile.HelpMe
         public const string EmptyFieldError = "Cannot have empty fields.  Please fill in all the information.";
 
         // URLs
-        public const string BaseUrl = "";
+        public const string BaseUrl = "http:://hackaz.justincanode.com";
 
 
         // Validations Constants

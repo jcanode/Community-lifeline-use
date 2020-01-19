@@ -24,7 +24,8 @@ namespace Mobile.HelpMe.Services
 
         public async Task CreateUser(User user)
         {
-            throw new NotImplementedException();
+            var userJson = JsonConvert.SerializeObject(user);
+            await _userRepository.CreateUser(userJson);
         }
 
         public async Task SignIn(string username, string password)

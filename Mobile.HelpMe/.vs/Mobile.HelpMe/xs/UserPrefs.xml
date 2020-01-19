@@ -1,28 +1,26 @@
 ﻿<Properties StartupConfiguration="{86609E0D-0CCB-4308-A367-98387F119346}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Mobile.HelpMe/Pages/SignUpPage.xaml">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Mobile.HelpMe/Repositories/BaseRepository.cs" Line="46" Column="29" />
+      <File FileName="Mobile.HelpMe/Repositories/BaseRepository.cs" Line="32" Column="29" />
       <File FileName="Mobile.HelpMe/PageModels/SignInPageModel.cs" Line="50" Column="14" />
-      <File FileName="Mobile.HelpMe/Repositories/UserRepository.cs" Line="27" Column="13" />
+      <File FileName="Mobile.HelpMe/Repositories/UserRepository.cs" Line="23" Column="1" />
       <File FileName="Mobile.HelpMe/PageModels/HelpMePageModel.cs" Line="126" Column="1" />
       <File FileName="Mobile.HelpMe/Models/User.cs" Line="9" Column="46" />
-      <File FileName="Mobile.HelpMe/PageModels/SignUpPageModel.cs" Line="1" Column="1" />
-      <File FileName="Mobile.HelpMe/Pages/SignUpPage.xaml" Line="29" Column="117" />
+      <File FileName="Mobile.HelpMe/PageModels/SignUpPageModel.cs" Line="115" Column="1" />
+      <File FileName="Mobile.HelpMe/Pages/SignUpPage.xaml" Line="16" Column="62" />
+      <File FileName="Mobile.HelpMe/AppConstants.cs" Line="49" Column="6" />
+      <File FileName="Mobile.HelpMe/Services/UserService.cs" Line="28" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Mobile.HelpMe" expanded="True">
-            <Node name="Common.Gis" expanded="True">
-              <Node name="Calculations" expanded="True" />
-              <Node name="Helpers" expanded="True" />
-            </Node>
             <Node name="Mobile.HelpMe" expanded="True">
               <Node name="PageModels" expanded="True" />
-              <Node name="Pages" expanded="True">
-                <Node name="SignUpPage.xaml" selected="True" />
+              <Node name="Repositories" expanded="True">
+                <Node name="BaseRepository.cs" selected="True" />
               </Node>
-              <Node name="App.xaml" expanded="True" />
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -39,9 +37,10 @@
       <Breakpoint file="/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/PageModels/HelpMePageModel.cs" relfile="Mobile.HelpMe/PageModels/HelpMePageModel.cs" line="114" column="1" />
       <Breakpoint file="/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/PageModels/HelpMePageModel.cs" relfile="Mobile.HelpMe/PageModels/HelpMePageModel.cs" line="119" column="1" />
       <Breakpoint file="/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/PageModels/HelpMePageModel.cs" relfile="Mobile.HelpMe/PageModels/HelpMePageModel.cs" line="105" column="1" />
-      <Breakpoint file="/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/PageModels/SignUpPageModel.cs" relfile="Mobile.HelpMe/PageModels/SignUpPageModel.cs" line="92" column="1" />
-      <Breakpoint file="/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/PageModels/SignUpPageModel.cs" relfile="Mobile.HelpMe/PageModels/SignUpPageModel.cs" line="56" column="1" />
-      <Breakpoint file="/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/PageModels/SignUpPageModel.cs" relfile="Mobile.HelpMe/PageModels/SignUpPageModel.cs" line="88" column="1" />
+      <Breakpoint file="/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/PageModels/SignUpPageModel.cs" relfile="Mobile.HelpMe/PageModels/SignUpPageModel.cs" line="99" column="1" />
+      <Breakpoint file="/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/PageModels/SignUpPageModel.cs" relfile="Mobile.HelpMe/PageModels/SignUpPageModel.cs" line="63" column="1" />
+      <Breakpoint file="/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/PageModels/SignUpPageModel.cs" relfile="Mobile.HelpMe/PageModels/SignUpPageModel.cs" line="95" column="1" />
+      <Breakpoint file="/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Repositories/UserRepository.cs" relfile="Mobile.HelpMe/Repositories/UserRepository.cs" line="23" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

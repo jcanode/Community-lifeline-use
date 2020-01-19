@@ -19,7 +19,7 @@ namespace Mobile.HelpMe.Repositories
 
         public async Task CreateUser(string jsonContent)
         {
-            var path = "/users";
+            var path = "/api/register";
             var resp = await PostAsync(_baseUrl, path, jsonContent);
         }
 
@@ -33,7 +33,7 @@ namespace Mobile.HelpMe.Repositories
 
         public async Task<User> Login(string jsonContent)
         {
-            string path = "/user/authenticate";
+            string path = "/api/authenticate";
             var resp = await PostAsync(_baseUrl, path, jsonContent);
             var user = JsonConvert.DeserializeObject<User>(resp.Content.ToString());
             return user;
