@@ -4,14 +4,14 @@
     "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj": {}
   },
   "projects": {
-    "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj": {
-      "version": "1.0.0",
+    "/Users/joesamyn/CVO_Projects/PrePass.Mobile/Dev/Source/Xam.Plugin/Common.Gis/Common.Gis/Common.Gis.csproj": {
+      "version": "1.1.0",
       "restore": {
-        "projectUniqueName": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj",
-        "projectName": "Mobile.HelpMe",
-        "projectPath": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj",
+        "projectUniqueName": "/Users/joesamyn/CVO_Projects/PrePass.Mobile/Dev/Source/Xam.Plugin/Common.Gis/Common.Gis/Common.Gis.csproj",
+        "projectName": "PrePass.Common.Gis",
+        "projectPath": "/Users/joesamyn/CVO_Projects/PrePass.Mobile/Dev/Source/Xam.Plugin/Common.Gis/Common.Gis/Common.Gis.csproj",
         "packagesPath": "/Users/joesamyn/.nuget/packages/",
-        "outputPath": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/obj/",
+        "outputPath": "/Users/joesamyn/CVO_Projects/PrePass.Mobile/Dev/Source/Xam.Plugin/Common.Gis/Common.Gis/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/joesamyn/.config/NuGet/NuGet.Config"
@@ -41,18 +41,6 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[12.0.3, )"
-            },
-            "Xamarin.Essentials": {
-              "target": "Package",
-              "version": "[1.2.0, )"
-            },
-            "Xamarin.Forms": {
-              "target": "Package",
-              "version": "[4.2.0.709249, )"
             }
           },
           "imports": [
@@ -65,7 +53,80 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj",
+        "projectName": "Mobile.HelpMe",
+        "projectPath": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/Mobile.HelpMe.csproj",
+        "packagesPath": "/Users/joesamyn/.nuget/packages/",
+        "outputPath": "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/joesamyn/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "/Users/joesamyn/CVO_Projects/PrePass.Mobile/Dev/Source/Xam.Plugin/Common.Gis/Common.Gis/Common.Gis.csproj": {
+                "projectPath": "/Users/joesamyn/CVO_Projects/PrePass.Mobile/Dev/Source/Xam.Plugin/Common.Gis/Common.Gis/Common.Gis.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "FreshMvvm": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.4.0.991477, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
         }
       }
     }

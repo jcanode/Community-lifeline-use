@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile.HelpMe.Pages.HelpYouPage"
+             BackgroundColor="{StaticResource PageBackgroundColor}"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+             <ListView x:Name="list"
+                       HasUnevenRows="True"
+                       ItemsSource="{Binding HelpRequests}">
+                 <ListView.ItemTemplate>
+                     <DataTemplate>
+                         <ViewCell>
+                             <Frame Margin="5" Padding="2" BackgroundColor="{StaticResource ListItemBackgroundColor}">
+                                 <StackLayout Orientation="Horizontal">
+                                     <StackLayout Padding="5"
+                                                  Margin="5"
+                                                  Orientation="Vertical"
+                                                  BackgroundColor="{StaticResource ListItemBackgroundColor}">
+                                        <Label Text="{Binding Problem}" Style="{StaticResource ListViewItemHeaderText}"/>
+                                        <Label Text="{Binding Username}" Style="{StaticResource ListViewItemText}"/>
+                                     </StackLayout>
+                                     <StackLayout Padding="5"
+                                                  Margin="5"
+                                                  HorizontalOptions="EndAndExpand"
+                                                  VerticalOptions="Center">
+                                        <Label Text="{Binding Distance}" Style="{StaticResource ListViewItemText}"/>
+                                     </StackLayout>
+                                 </StackLayout>
+                             </Frame>
+                        </ViewCell>
+                     </DataTemplate>
+                 </ListView.ItemTemplate>
+             </ListView>
+         </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mobile.HelpMe.iOS", "Mobile
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mobile.HelpMe", "Mobile.HelpMe\Mobile.HelpMe.csproj", "{3A1709AC-A204-4423-82F4-974F9D6369C2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Gis", "..\..\..\..\CVO_Projects\PrePass.Mobile\Dev\Source\Xam.Plugin\Common.Gis\Common.Gis\Common.Gis.csproj", "{2A1457FE-CC91-487B-A303-E3A229D2C6E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,5 +55,17 @@ Global
 		{3A1709AC-A204-4423-82F4-974F9D6369C2}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{3A1709AC-A204-4423-82F4-974F9D6369C2}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{3A1709AC-A204-4423-82F4-974F9D6369C2}.Release|iPhone.Build.0 = Release|Any CPU
+		{2A1457FE-CC91-487B-A303-E3A229D2C6E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A1457FE-CC91-487B-A303-E3A229D2C6E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A1457FE-CC91-487B-A303-E3A229D2C6E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A1457FE-CC91-487B-A303-E3A229D2C6E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A1457FE-CC91-487B-A303-E3A229D2C6E1}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{2A1457FE-CC91-487B-A303-E3A229D2C6E1}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{2A1457FE-CC91-487B-A303-E3A229D2C6E1}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{2A1457FE-CC91-487B-A303-E3A229D2C6E1}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{2A1457FE-CC91-487B-A303-E3A229D2C6E1}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{2A1457FE-CC91-487B-A303-E3A229D2C6E1}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{2A1457FE-CC91-487B-A303-E3A229D2C6E1}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{2A1457FE-CC91-487B-A303-E3A229D2C6E1}.Release|iPhone.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

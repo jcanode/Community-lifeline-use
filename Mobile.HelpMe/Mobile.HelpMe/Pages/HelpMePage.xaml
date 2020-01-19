@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile.HelpMe.Pages.HelpMePage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <AbsoluteLayout BackgroundColor="{StaticResource PageBackgroundColor}"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand">
+            <Label Text="Request Help" FontSize="34" FontAttributes="Bold" TextColor="White"
+                   AbsoluteLayout.LayoutBounds=".5, 0, 1, .2"
+                   AbsoluteLayout.LayoutFlags="All"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            <Frame AbsoluteLayout.LayoutBounds=".5, .4, .9, 1"
+                   AbsoluteLayout.LayoutFlags="All"
+                   BackgroundColor="{StaticResource FormBoxBackgroundColor}"
+                   CornerRadius="10"
+                   VerticalOptions="CenterAndExpand">
+                <StackLayout Spacing="20">
+                    <Picker ItemsSource="{Binding Categories}"
+                            SelectedItem="{Binding SelectedCategory}"
+                            Title="Select A Problem Category"
+                            TitleColor="White"
+                            TextColor="White"/>
+                    <Picker ItemsSource="{Binding CarProblems}"
+                            SelectedItem="{Binding SelectedCarProblem}"
+                            Title="Select A Car Problem"
+                            TitleColor="White"
+                            TextColor="White"
+                            IsVisible="{Binding ShowCarProblemList}"/>
+                    <Picker ItemsSource="{Binding NaturalDisasterProblems}"
+                            SelectedItem="{Binding SelectedNdProblem}"
+                            Title="Select A Natural Disaster Problem"
+                            TitleColor="White"
+                            TextColor="White"
+                            IsVisible="{Binding ShowNaturalDisasterList}"/>
+                    <Entry Placeholder="Description.."
+                           Style="{StaticResource EntryStyle}"
+                           IsVisible="{Binding ShowDescription}"/>
+                    <StackLayout AbsoluteLayout.LayoutBounds=".5, .6, .3, .4"
+                         AbsoluteLayout.LayoutFlags="All"
+                         VerticalOptions="Center">
+                    <Button BackgroundColor="{StaticResource EntryBackgroundColor}"
+                            Text="Submit"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            TextColor="White"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            CornerRadius="5"
+                            Command="{Binding SubmitButtonClicked}"/>
+                    </StackLayout>
+                </StackLayout>
+                
+            </Frame>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

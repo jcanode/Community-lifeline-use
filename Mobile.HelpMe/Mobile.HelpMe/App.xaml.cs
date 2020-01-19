@@ -1,4 +1,8 @@
 ﻿using System;
+using FreshMvvm;
+using Mobile.HelpMe.Interfaces.Services;
+using Mobile.HelpMe.PageModels;
+using Mobile.HelpMe.Services;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +14,13 @@ namespace Mobile.HelpMe
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            FreshIoCManager.RegisterServices();
+
+            var page = FreshPageModelResolver.ResolvePageModel<SignInPageModel>();
+            var basicNav = new FreshNavigationContainer(page);
+            MainPage = basicNav;
+
+            
         }
 
         protected override void OnStart()
