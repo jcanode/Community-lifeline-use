@@ -13,9 +13,9 @@
                    HorizontalOptions="Center"
                    AbsoluteLayout.LayoutFlags="All"/>
             <StackLayout VerticalOptions="CenterAndExpand"
-                         AbsoluteLayout.LayoutBounds=".5, 0.5, .9, .6"
+                         AbsoluteLayout.LayoutBounds=".5, 0.7, .9, .7"
                          AbsoluteLayout.LayoutFlags="All">
-                <Frame AbsoluteLayout.LayoutBounds=".5, .3, .9, .6"
+                <Frame AbsoluteLayout.LayoutBounds=".5, .3, .9, .7"
                                  AbsoluteLayout.LayoutFlags="All"
                                  BackgroundColor="{StaticResource FormBoxBackgroundColor}"
                                  CornerRadius="10">
@@ -24,6 +24,7 @@
                         <Entry Placeholder="Username" Style="{StaticResource EntryStyle}" Text="{Binding Username}"/>
                         <Entry Placeholder="Password" Style="{StaticResource EntryStyle}" IsPassword="True" Text="{Binding Password}"/>
                         <Entry Placeholder="Confirm Password" Style="{StaticResource EntryStyle}" IsPassword="True" Text="{Binding ConfirmPass}"/>
+                        <Entry Placeholder="Phone Number" Style="{x:StaticResource EntryStyle}" Keyboard="Telephone" Text="{Binding PhoneNumber}"/>
                         <Label Text="{Binding PasswordMatchError}" TextColor="Red" IsVisible="{Binding PasswordsNotMatch}"/>
                         <Label Text="{Binding PasswordLengthError}" TextColor="Red" IsVisible="{Binding PasswordIncorrectLength}"/>
                         <Label Text="{Binding EmptyFieldsError}" TextColor="Red" IsVisible="{Binding EmptyFields}"/>

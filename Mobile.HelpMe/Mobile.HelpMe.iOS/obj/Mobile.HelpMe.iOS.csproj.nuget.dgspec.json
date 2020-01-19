@@ -4,6 +4,59 @@
     "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/Mobile.HelpMe.iOS.csproj": {}
   },
   "projects": {
+    "/Users/joesamyn/CVO_Projects/PrePass.Mobile/Dev/Source/Xam.Plugin/Common.Gis/Common.Gis/Common.Gis.csproj": {
+      "version": "1.1.0",
+      "restore": {
+        "projectUniqueName": "/Users/joesamyn/CVO_Projects/PrePass.Mobile/Dev/Source/Xam.Plugin/Common.Gis/Common.Gis/Common.Gis.csproj",
+        "projectName": "PrePass.Common.Gis",
+        "projectPath": "/Users/joesamyn/CVO_Projects/PrePass.Mobile/Dev/Source/Xam.Plugin/Common.Gis/Common.Gis/Common.Gis.csproj",
+        "packagesPath": "/Users/joesamyn/.nuget/packages/",
+        "outputPath": "/Users/joesamyn/CVO_Projects/PrePass.Mobile/Dev/Source/Xam.Plugin/Common.Gis/Common.Gis/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/joesamyn/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/joesamyn/Documents/GitHub/mycarhackaz/Mobile.HelpMe/Mobile.HelpMe.iOS/Mobile.HelpMe.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -79,7 +132,11 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/joesamyn/CVO_Projects/PrePass.Mobile/Dev/Source/Xam.Plugin/Common.Gis/Common.Gis/Common.Gis.csproj": {
+                "projectPath": "/Users/joesamyn/CVO_Projects/PrePass.Mobile/Dev/Source/Xam.Plugin/Common.Gis/Common.Gis/Common.Gis.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

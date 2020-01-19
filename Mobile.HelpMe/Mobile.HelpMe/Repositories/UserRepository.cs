@@ -14,17 +14,21 @@ namespace Mobile.HelpMe.Repositories
 
         public UserRepository()
         {
-            _baseUrl = AppConstants.BaseUrl;
+            _baseUrl = "http://hackaz.justincanode.com/api/users";
         }
 
         public async Task CreateUser(string jsonContent)
         {
-
+            var path = "/users";
+            var resp = await PostAsync(_baseUrl, path, jsonContent);
         }
 
-        public async  Task<User> FindUser(string username)
+        public async Task<User> FindUser(string username)
         {
-            throw new NotImplementedException();
+            string path = "/user/username";
+            var resp = await Get(_baseUrl, path);
+            var user = JsonConvert.DeserializeObject<User>(resp.Content.ToString());
+            return user;
         }
 
         public async Task<User> Login(string jsonContent)

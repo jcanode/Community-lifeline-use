@@ -46,6 +46,13 @@ namespace Mobile.HelpMe.PageModels
             set => SetValue(ref _confirmPass, value);
         }
 
+        private string _phoneNumber;
+        public string PhoneNumber
+        {
+            get => _phoneNumber;
+            set => SetValue(ref _phoneNumber, value);
+        }
+
         private bool _passwordsNotMatch = false;
         public bool PasswordsNotMatch
         {
@@ -101,6 +108,7 @@ namespace Mobile.HelpMe.PageModels
                         Email = _email,
                         UserName = _username,
                         Password = _password,
+                        PhoneNumber = _phoneNumber,
                         HelpRating = 0
                     };
 

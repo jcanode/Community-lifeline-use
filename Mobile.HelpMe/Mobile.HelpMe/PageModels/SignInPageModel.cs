@@ -46,7 +46,11 @@ namespace Mobile.HelpMe.PageModels
 
         private async Task OnSignInClicked()
         {
-            await _userService.SignIn(Username, Password);
+            if(Password != null && Username != null)
+            {
+                await _userService.SignIn(Username, Password);
+            }
+            
             var tabbedNav = new FreshTabbedNavigationContainer("secondNavPage");
             tabbedNav.AddTab<MainPageModel>("Home", null);
             tabbedNav.AddTab<HelpMePageModel>("Help Me", null);

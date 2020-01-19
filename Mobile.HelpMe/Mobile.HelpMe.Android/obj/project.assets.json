@@ -851,6 +851,7 @@
         "dependencies": {
           "FreshMvvm": "3.0.0",
           "Newtonsoft.Json": "12.0.3",
+          "PrePass.Common.Gis": "1.1.0",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.4.0.991477"
         },
@@ -859,6 +860,16 @@
         },
         "runtime": {
           "bin/placeholder/Mobile.HelpMe.dll": {}
+        }
+      },
+      "PrePass.Common.Gis/1.1.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/PrePass.Common.Gis.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PrePass.Common.Gis.dll": {}
         }
       }
     }
@@ -2081,6 +2092,11 @@
       "type": "project",
       "path": "../Mobile.HelpMe/Mobile.HelpMe.csproj",
       "msbuildProject": "../Mobile.HelpMe/Mobile.HelpMe.csproj"
+    },
+    "PrePass.Common.Gis/1.1.0": {
+      "type": "project",
+      "path": "../../../../../CVO_Projects/PrePass.Mobile/Dev/Source/Xam.Plugin/Common.Gis/Common.Gis/Common.Gis.csproj",
+      "msbuildProject": "../../../../../CVO_Projects/PrePass.Mobile/Dev/Source/Xam.Plugin/Common.Gis/Common.Gis/Common.Gis.csproj"
     }
   },
   "projectFileDependencyGroups": {

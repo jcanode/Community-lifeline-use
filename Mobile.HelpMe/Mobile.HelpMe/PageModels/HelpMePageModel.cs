@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using FreshMvvm;
 using Mobile.HelpMe.Models;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Mobile.HelpMe.PageModels
@@ -125,12 +126,13 @@ namespace Mobile.HelpMe.PageModels
 
         private async Task OnSubmitClicked()
         {
+            var location = await Geolocation.GetLastKnownLocationAsync();
             var request = new HelpRequest
             {
                 Problem = SelectedCategory == "Car" ? SelectedCarProblem : SelectedNdProblem,
                 Description = ProblemDesc,
-                Latitude = 97676,
-                Longitude = 9372645,
+                Latitude = location.Latitude,
+                Longitude = location.Longitude,
                 UserEmail = "jcanode@nomail.com",
                 Username = "jcanode"
             };
