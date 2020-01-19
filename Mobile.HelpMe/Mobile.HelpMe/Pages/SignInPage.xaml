@@ -3,36 +3,45 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mobile.HelpMe.Pages.SignInPage"
              NavigationPage.HasNavigationBar="False">
-    <AbsoluteLayout BackgroundColor="{StaticResource PageBackgroundColor}"
-                        HorizontalOptions="FillAndExpand"
-                        VerticalOptions="FillAndExpand">
- 
-        <Grid Margin="16">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
-            <StackLayout Grid.Row="0">
-                <Label Text="Please enter your credentials" FontSize="34" FontAttributes="Bold" TextColor="White"
-                   AbsoluteLayout.LayoutBounds=".5, 0, 1, .2"
-                   AbsoluteLayout.LayoutFlags="All"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center" />
-                <Entry Text ="Username" TextColor="White" Style="{StaticResource EntryStyle}"/>
-                <Entry Text="Password" TextColor="White" Style="{StaticResource EntryStyle}"/>
-                <Label Text="Invalid credentials entered"
-                       IsVisible="{Binding AreCredentialsInvalid}"
-                       TextColor="Red" />
-            </StackLayout>
+
+    <ContentPage.Content>
+        <AbsoluteLayout BackgroundColor="{StaticResource PageBackgroundColor}"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand">
+
+            <Label Text="Sign In" FontSize="34" FontAttributes="Bold" TextColor="White"
+                       AbsoluteLayout.LayoutBounds=".5, 0, 1, .2"
+                       AbsoluteLayout.LayoutFlags="All"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+
+            <Frame AbsoluteLayout.LayoutBounds=".5, .3, .9, .4"
+                             AbsoluteLayout.LayoutFlags="All"
+                             BackgroundColor="{StaticResource FormBoxBackgroundColor}"
+                             CornerRadius="10">
+
+                <StackLayout Spacing="20">
+                        <Entry Placeholder ="Username" TextColor="White" Style="{StaticResource EntryStyle}"/>
+                        <Entry Placeholder ="Password" TextColor="White" Style="{StaticResource EntryStyle}"/>
+                        <!--<Label Text="Invalid credentials entered"
+                               IsVisible="{Binding AreCredentialsInvalid}"
+                               TextColor="Red"/>-->
+                </StackLayout>
+            </Frame>
+
+            <StackLayout AbsoluteLayout.LayoutBounds=".5, .5, .3, .4"
+                AbsoluteLayout.LayoutFlags="All"
+                VerticalOptions="Center">
+
                 <Button BackgroundColor="{StaticResource EntryBackgroundColor}"
-                        Text="Submit"
-                        FontSize="24"
-                        FontAttributes="Bold"
-                        TextColor="White"
-                        HorizontalOptions="Center"
-                        CornerRadius="5"
-                        Grid.Row="2"/>
-        </Grid>
-    </AbsoluteLayout>
+                    Text="Submit"
+                    FontSize="24"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    CornerRadius="5"/>
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
 </ContentPage>

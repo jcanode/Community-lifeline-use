@@ -1,5 +1,47 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Mobile.HelpMe.Pages.SignUpPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile.HelpMe.Pages.SignUpPage"
+             NavigationPage.HasNavigationBar="True">
     <ContentPage.Content>
+        <StackLayout BackgroundColor="{StaticResource PageBackgroundColor}"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand">
+            <Label Text="Create Account" FontSize="34" FontAttributes="Bold" TextColor="White"
+                       AbsoluteLayout.LayoutBounds=".5, 0, 1, .2"
+                       AbsoluteLayout.LayoutFlags="All"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+            <Frame AbsoluteLayout.LayoutBounds=".5, .3, .9, .4"
+                             AbsoluteLayout.LayoutFlags="All"
+                             BackgroundColor="{StaticResource FormBoxBackgroundColor}"
+                             CornerRadius="10">
+                <StackLayout Spacing="20">
+                    <Label Text="Email"/>
+                    <Entry Placeholder="Email Address" Style="{StaticResource EntryStyle}"/>
+                    <Label Text= "Username"/>
+                    <Entry Placeholder="Username" Style="{StaticResource EntryStyle}"/>
+                    <Label Text="Password" />
+                    <Entry Placeholder="Password" Style="{StaticResource EntryStyle}"/>
+                    <Label Text="Confirm Password"/>
+                    <Entry Placeholder="Confirm Password" Style="{StaticResource EntryStyle}"/>
+                    
+                </StackLayout>
+            </Frame>
+
+            <StackLayout AbsoluteLayout.LayoutBounds=".5, .5, .3, .4"
+                AbsoluteLayout.LayoutFlags="All"
+                VerticalOptions="Center">
+
+                <Button BackgroundColor="{StaticResource EntryBackgroundColor}"
+                    Text="Submit"
+                    FontSize="24"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    CornerRadius="5"/>
+            </StackLayout>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
